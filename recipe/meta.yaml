@@ -4,7 +4,7 @@
 
 {% set name = goname.split('/')[-1] %}
 
-{% set plugin_dir = os.sep.join(["plugins", "registry.terraform.io", "hashicorp", provider.lower(), version]) %}
+{% set plugin_dir = "plugins/registry.terraform.io/hashicorp/" + provider.lower() + "/" + version %}
 {% set x4_plugin = name + '_v' + version %}
 
 package:
