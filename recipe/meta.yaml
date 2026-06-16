@@ -1,6 +1,6 @@
 {% set provider = "oci" %}
 {% set goname = "github.com/oracle/terraform-provider-"+provider.lower() %}
-{% set version = "8.18.0" %}
+{% set version = "8.19.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 832ccd0a176c2b605f9780005104b0089e32f9245bc0ea37d15133efdb48c4d8
+  sha256: ff30a5b02212f40e4737e90f6040c9f2b2b73b18bc3c2a86ea25c7c7424d00e4
 
 build:
   number: 0
